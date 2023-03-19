@@ -1,6 +1,6 @@
 {
   "expo": {
-    "scheme": "acme",
+    "scheme": "relay-my-router",
     "web": {
       "bundler": "metro"
     },
