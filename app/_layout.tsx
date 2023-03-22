@@ -27,9 +27,5 @@ export default function RootLayout() {
     return <SplashScreen />;
   }
   // Render the children routes now that all the assets are loaded.
-  return (
-    <Provider>
-      <Slot />
-    </Provider>
-  );
+  return <Slot />;
 }

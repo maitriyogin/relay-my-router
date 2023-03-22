@@ -1,8 +1,9 @@
-import { Stack } from "expo-router";
+import { Slot } from "expo-router";
+import React from "react";
 
 export const unstable_settings = {
-  initialRouteName: "home",
+  initialRouteName: "/home",
 };
 export default function AppStack() {
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return <Slot />;
 }
