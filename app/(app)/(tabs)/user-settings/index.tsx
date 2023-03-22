@@ -15,9 +15,6 @@ export default function UserSettings() {
       <Link href="/user-settings/details">
         <Text link>Go to Details</Text>
       </Link>
-      <Link href="/user-settings/preferences">
-        <Text link>Go to Preferences</Text>
-      </Link>
     </View>
   );
 }
