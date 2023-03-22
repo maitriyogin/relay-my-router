@@ -10,7 +10,6 @@ export default function UserSettings() {
         options={{
           headerShown: true,
           headerTitle: "User Settings",
-          headerRight: SignOutButton,
         }}
       />
       <Link href="/user-settings/details">

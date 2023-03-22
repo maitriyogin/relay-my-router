@@ -11,7 +11,6 @@ export default function Home() {
         options={{
           headerShown: true,
           headerTitle: "Home",
-          headerRight: SignOutButton,
         }}
       />
       {/* Use the `Link` component to enable optimized client-side routing. */}
@@ -23,9 +22,6 @@ export default function Home() {
       </Link>
       <Link href="/home/3/more">
         <Text link>Go to Details 3</Text>
-      </Link>
-      <Link href="/settings">
-        <Text link>Go to Settings</Text>
       </Link>
     </View>
   );
