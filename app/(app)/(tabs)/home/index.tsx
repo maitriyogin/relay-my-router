@@ -23,6 +23,9 @@ export default function Home() {
       <Link href="/home/3/more">
         <Text link>Go to Details 3</Text>
       </Link>
+      <Link href="/settings">
+        <Text link>Go to Settings</Text>
+      </Link>
     </View>
   );
 }
