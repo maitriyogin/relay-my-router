@@ -1,13 +1,8 @@
-import {Stack, Tabs} from "expo-router";
+import { Stack } from "expo-router";
 
 export const unstable_settings = {
-  // Ensure any route can link back to `/`
-  initialRouteName: "/app/home",
+  initialRouteName: "home",
 };
-export default function TabsLayout() {
-  console.log("----- tabs")
-
-  return (
-    <Tabs screenOptions={{headerShown:false}}/>
-  );
+export default function AppStack() {
+  return <Stack screenOptions={{ headerShown: false }} />;
 }

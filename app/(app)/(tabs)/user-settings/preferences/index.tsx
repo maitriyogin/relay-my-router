@@ -1,7 +1,9 @@
 import BottomSheet, { useBottomSheet } from "@gorhom/bottom-sheet";
 import { Link, useNavigation, useRouter } from "expo-router";
 import React, { useCallback, useMemo, useRef } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
+
+import { Text } from "../../../../../components/Text";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { IndependentStack } from "./independent-stack";
@@ -41,6 +43,7 @@ export default function Index() {
       onClose={handleClose}
       enablePanDownToClose
       detached={false}
+      backgroundStyle={styles.container}
     >
       <PreferencesView />
     </BottomSheet>
@@ -65,10 +68,11 @@ const PreferencesView = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 24,
-    backgroundColor: "grey",
+    backgroundColor: "orange",
   },
   contentContainer: {
     flex: 1,
+    padding: 0,
+    backgroundColor: "orange",
   },
 });

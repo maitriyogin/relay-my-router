@@ -1,5 +1,6 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
+import { Text } from "../components/Text";
 import {
   // Import `SplashScreen` from `expo-router` instead of `expo-splash-screen`
   SplashScreen,
@@ -7,12 +8,13 @@ import {
   // This example uses a basic Layout component, but you can use any Layout.
   Slot,
   Stack,
-  Redirect
+  Redirect,
 } from "expo-router";
 
 import { useFonts, Inter_500Medium } from "@expo-google-fonts/inter";
+import { Provider } from "../context/auth";
 
-export default function Layout() {
+export default function RootLayout() {
   // Load the font `Inter_500Medium`
   const [fontsLoaded] = useFonts({
     Inter_500Medium,
@@ -25,5 +27,9 @@ export default function Layout() {
     return <SplashScreen />;
   }
   // Render the children routes now that all the assets are loaded.
-  return <Stack screenOptions={{headerShown:false}}/>;
+  return (
+    <Provider>
+      <Slot />
+    </Provider>
+  );
 }

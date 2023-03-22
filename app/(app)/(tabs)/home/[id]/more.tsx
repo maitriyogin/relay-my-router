@@ -1,7 +1,7 @@
 import { useSearchParams } from "expo-router";
 import React from "react";
-import { View, Text } from "react-native";
-
+import { View } from "react-native";
+import { Text } from "../../../../../components";
 export default () => {
   const { id } = useSearchParams();
   return (

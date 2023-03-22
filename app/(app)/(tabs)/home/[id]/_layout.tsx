@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import { Slot, Stack, useRouter, useSearchParams } from "expo-router";
-
+import { Text } from "../../../../../components";
 export default function _layout() {
   const router = useRouter();
   const { id } = useSearchParams();
@@ -17,7 +17,7 @@ export default function _layout() {
       >
         Details Screen
       </Text>
-      <Text style={{ fontSize: 30 }}>{id}</Text>
+      <Text big>{id}</Text>
       <View
         style={{ flex: 1, justifyContent: "center", alignItems: "flex-end" }}
       >
