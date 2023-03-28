@@ -1,8 +1,8 @@
 import { FontAwesome } from "@expo/vector-icons";
+import React from "react";
 import { View } from "react-native";
 import { Link, Stack, Tabs } from "expo-router";
-import { SignOutButton } from "../../../components/SignOutButton";
-import { Text } from "../../../components/Text";
+import { Text } from "../../../components";
 export default function Home() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
