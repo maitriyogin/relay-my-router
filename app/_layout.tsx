@@ -2,11 +2,6 @@ import { Inter_500Medium, useFonts } from "@expo-google-fonts/inter";
 
 import { SplashScreen, Stack } from "expo-router";
 
-export const unstable_settings = {
-  // Ensure any route can link back to `/`
-  initialRouteName: "index",
-};
-
 export default function RootLayout() {
   // Load the font `Inter_500Medium`
   const [fontsLoaded] = useFonts({
