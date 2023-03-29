@@ -1,6 +1,7 @@
 import { Inter_500Medium, useFonts } from "@expo-google-fonts/inter";
 
-import { SplashScreen, Stack } from "expo-router";
+import { Slot, SplashScreen, Stack } from "expo-router";
+import React from "react";
 
 export const unstable_settings = {
   // Ensure any route can link back to `/`
@@ -20,5 +21,5 @@ export default function RootLayout() {
     return <SplashScreen />;
   }
   // Render the children routes now that all the assets are loaded.
-  return <Stack />;
+  return <Slot />;
 }
