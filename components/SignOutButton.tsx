@@ -3,7 +3,7 @@ import { Link } from "expo-router";
 import { Pressable } from "react-native";
 import { useAuth } from "../context/auth";
 
-import { Text } from "../components/Text";
+import { Text } from "@components/Text";
 export function SignOutButton() {
   const { signOut } = useAuth();
 

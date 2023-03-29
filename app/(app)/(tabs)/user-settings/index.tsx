@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import { Link, Stack } from "expo-router";
-import { SignOutButton } from "../../../../components/SignOutButton";
-import { Text } from "../../../../components";
+import { SignOutButton } from "@components/SignOutButton";
+import { Text } from "@components";
 export default function UserSettings() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>

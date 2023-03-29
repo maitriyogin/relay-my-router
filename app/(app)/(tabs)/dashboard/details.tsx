@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import { useRouter } from "expo-router";
-import { Text } from "../../../../components";
+import { Text } from "@components";
 export default function Details() {
   const router = useRouter();
   return (
