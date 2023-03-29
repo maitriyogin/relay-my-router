@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { View } from "react-native";
 import { Link, Stack, Tabs, useRouter } from "expo-router";
-import { Text } from "../../../../components";
+import { Text } from "@components";
 export default function Dashboard() {
   const router = useRouter();
   useEffect(() => {

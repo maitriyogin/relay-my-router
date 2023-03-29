@@ -1,7 +1,7 @@
 import React from "react";
 import { Pressable, View } from "react-native";
 
-import { Text } from "../components/Text";
+import { Text } from "@components/Text";
 export function ToggleButton({ children, selected, onPress }) {
   return (
     <Button

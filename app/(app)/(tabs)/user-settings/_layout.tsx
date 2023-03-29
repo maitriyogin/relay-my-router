@@ -1,6 +1,6 @@
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Tabs, Stack } from "expo-router";
-import { SignOutButton } from "../../../../components/SignOutButton";
+import { SignOutButton } from "@components/SignOutButton";
 
 export default function Layout() {
   return (
