@@ -1,6 +1,6 @@
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Stack, Tabs, useSearchParams } from "expo-router";
-import { SignOutButton } from "../../../components/SignOutButton";
+import { SignOutButton } from "@components/SignOutButton";
 
 export const unstable_settings = {
   initialRouteName: "home",
