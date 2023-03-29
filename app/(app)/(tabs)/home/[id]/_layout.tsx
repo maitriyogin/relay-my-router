@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import { Slot, Stack, useRouter, useSearchParams } from "expo-router";
-import { Text } from "../../../../../components";
+import { Text } from "@components";
 export default function _layout() {
   const router = useRouter();
   const { id } = useSearchParams();
